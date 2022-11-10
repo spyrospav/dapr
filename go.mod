@@ -62,6 +62,7 @@ require (
 require (
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.2
+	github.com/mucache/components v0.0.0-00010101000000-000000000000
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace v1.7.0
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc v1.7.0
 	go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp v1.7.0
@@ -403,3 +404,7 @@ replace github.com/eclipse/paho.mqtt.golang => github.com/shivamkm07/paho.mqtt.g
 // Then, run `make modtidy` in this repository.
 // This ensures that go.mod and go.sum are up-to-date.
 // TEMP ONLY
+
+replace github.com/dapr/components-contrib => ../components-contrib
+
+replace github.com/mucache/components => ../components-mucache
